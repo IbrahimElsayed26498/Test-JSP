@@ -14,5 +14,14 @@
 	%>
 	<br>
 	<%= "last name: " + request.getParameter("lname") %>
+	
+	<div>
+	<%!
+		int sum(int x, int y){
+			return x + y;
+		}
+	%>
+	<%="sum(5, 6) : " + sum(5, 6) %>
+	</div>
 </body>
 </html>
