@@ -25,9 +25,14 @@
 	</div>
 	<div>
 		<%
-			Thread.sleep(2000);
-			response.sendRedirect("http://www.google.com");
+			//Thread.sleep(2000);
+			//response.sendRedirect("http://www.google.com");
+			
+			// Using session
+			session.setAttribute("fname", fname);
+			
 		%>
+		Click <a href="File.jsp">here</a>
 	</div>
 </body>
 </html>
