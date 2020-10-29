@@ -7,9 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<div>
 	<%
 		String fname = (String) session.getAttribute("fname");
-		out.print("First naem : " + fname);
+		out.print("First name : " + fname);
 	%>
+	</div>
+	<div>
+	<%
+		out.print("First Name (page context): " + 
+		(String) pageContext.getAttribute("fname", pageContext.SESSION_SCOPE));
+	%>
+	</div>
 </body>
 </html>
