@@ -23,5 +23,11 @@
 	%>
 	<%="sum(5, 6) : " + sum(5, 6) %>
 	</div>
+	<div>
+		<%
+			Thread.sleep(2000);
+			response.sendRedirect("http://www.google.com");
+		%>
+	</div>
 </body>
 </html>
