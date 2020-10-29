@@ -8,6 +8,12 @@
 </head>
 <body>
 	<div>
+		<%@page import="java.util.*"
+		%>
+		Date<%=new Date() %>
+	</div>
+	
+	<div>
 	<%
 		String fname = (String) session.getAttribute("fname");
 		out.print("First name : " + fname);
