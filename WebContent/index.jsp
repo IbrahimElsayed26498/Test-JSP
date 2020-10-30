@@ -9,7 +9,7 @@
 <body>
 	
 	<p>In the name of Allah, the Gracious, the Merciful</p>
-	
+	<%@page errorPage="./pages/giphy.html" %>
 	<%@ includefile='form.html' %>
 	
 	<% 
@@ -37,6 +37,16 @@
 			pageContext.setAttribute("fname", fname, pageContext.SESSION_SCOPE);
 		%>
 		Click <a href="File.jsp">here</a>
+	</div>
+	
+	<div>
+		<h1>Division Result</h1>
+		<%
+			int n1 = Integer.parseInt(request.getParameter("n1"));
+			int n2 = Integer.parseInt(request.getParameter("n2"));
+			int result = n1/n2;
+			out.print("Result : " + result);
+		%>
 	</div>
 </body>
 </html>
