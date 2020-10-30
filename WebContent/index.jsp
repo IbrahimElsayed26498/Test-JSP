@@ -48,5 +48,11 @@
 			out.print("Result : " + result);
 		%>
 	</div>
+	<div>
+	<jsp:param name="paramName" value="This is the vaue of the param"/>
+	<%--
+	<jsp:forward page="pageName"/>
+	 --%>
+	</div>
 </body>
 </html>
