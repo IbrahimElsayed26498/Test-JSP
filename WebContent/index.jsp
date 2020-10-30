@@ -7,7 +7,11 @@
 <title>Test Title</title>
 </head>
 <body>
+	
 	<p>In the name of Allah, the Gracious, the Merciful</p>
+	
+	<%@ includefile='form.html' %>
+	
 	<% 
 		String fname = request.getParameter("fname");
 		out.print("first name is : " + fname + "\n");
@@ -30,7 +34,7 @@
 			
 			// Using session
 			session.setAttribute("fname", fname);
-			
+			pageContext.setAttribute("fname", fname, pageContext.SESSION_SCOPE);
 		%>
 		Click <a href="File.jsp">here</a>
 	</div>

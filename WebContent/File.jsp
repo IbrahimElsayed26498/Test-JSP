@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="application/pdf; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 	<div>
 		<%@page import="java.util.*"
 		%>
